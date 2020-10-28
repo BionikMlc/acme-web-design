@@ -1,0 +1,211 @@
+:root {
+    box-sizing: border-box;
+    font-size: 100%;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+}
+
+*,*::before,*::after {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+html,body {
+    height: 100%;
+    position: relative;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Lato', sans-serif;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.center-v {
+    display: flex;
+    justify-content: center;
+}
+
+.header {
+    color: #FFFF;
+    background: #00293941;
+    padding: .5em;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.flex {
+    display: flex;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+}
+
+.logo-img {
+    margin-right: 1em;
+    width: 48px;
+}
+
+.logo-text {
+    text-transform: capitalize;
+}
+
+.nav {
+    list-style: none;
+    display: flex;
+}
+
+.nav-link:not(:last-child) {
+    margin-right: 2em;
+}
+.nav-link {
+    text-transform: capitalize;
+}
+
+.hero {
+    position: relative;
+    height: 100%;
+    display: flex;
+}
+
+.hero .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.hero::before {
+    content: '';
+    display: block;
+    background-image: linear-gradient(#25727eb2,#25727eb2), url(./assets/hero@1x.jpg);
+    filter: blur(3px);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.hero-text {
+    color: #FFFF;
+    text-transform: capitalize;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.322);
+    max-width: 40%;
+}
+
+.cta-btn {
+    font-size: .8em;
+    background: #f0660b;
+    text-transform: uppercase;
+    color: #FFFF;
+    border-radius: .4em;
+    padding: 1.2em;
+    margin-top: .5em;
+    font-weight: 700;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.322);
+}
+
+.newsletter {
+    background: #002939;
+    color: #fff;
+    display: flex;
+    padding: 2em 0;
+    align-items: center;
+}
+
+.newsletter .cta-btn {
+    border-radius: 0 .4em  .4em 0;
+}
+
+.newsletter-text {
+    margin-right:  auto;
+    text-transform: capitalize;
+}
+.email-input {
+    padding: 1.2em;
+    color: #1E8EB8;
+    background: #F3F3F3;
+    font-weight: 700;
+    border: none;
+    outline-color: #0d6f92;
+    width: 400px;
+}
+
+.section-heading {
+    color: #f0660b;
+    display: inline-block;
+    padding-bottom: 2em;
+    text-transform: capitalize;
+    /* position: relative; */
+}
+
+.services {
+    padding: 10em 0;
+    padding-top: 6em;
+    position: relative;
+    z-index: -1;
+}
+.heading-text {
+    max-width: 500px;
+    font-size: 1.6rem;
+    color: #020202b7;
+    text-transform: capitalize;
+    line-height: 1.7;
+}
+.heading-img {
+    max-width: 50%;
+}
+
+.section-heading::after {
+    content: '';
+    display: block;
+    height: 50px;
+    min-width: 200px;
+    margin-top: -2em;
+    left: 0;
+    background: #002939;
+    position: absolute;
+    z-index: -1;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.row-rev {
+    flex-direction: row-reverse;
+}
+
+/* clip-path: polygon(100% 33%, 100% 100%, 0 100%); */
+
+.about-us {
+    padding-top: .7em;
+    background: #dbe2ea;
+    position: relative;
+    z-index: -1;
+
+}

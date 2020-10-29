@@ -150,6 +150,7 @@ h1,h2,h3,h4,h5,h6 {
     background: #F3F3F3;
     font-weight: 700;
     border: none;
+    border-radius: 1em 0  0 1em;
     outline-color: #0d6f92;
     width: 400px;
 }
@@ -203,9 +204,60 @@ h1,h2,h3,h4,h5,h6 {
 /* clip-path: polygon(100% 33%, 100% 100%, 0 100%); */
 
 .about-us {
+    padding: 10em 0;
     padding-top: .7em;
     background: #dbe2ea;
     position: relative;
     z-index: -1;
 
+}
+.contact-us {
+    padding: 10em 0;
+    padding-top: .7em;
+    background: #F3F3F3;
+    position: relative;
+    z-index: -1;
+
+}
+
+.form-container {
+    width: 50%;
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+.contact-form input{
+    padding: 1.2em;
+    color: #1E8EB8;
+    outline-color: #0d6f92;
+    margin-bottom: 1em;
+    border-radius: 1em;
+    box-shadow: none;
+    border: 1px solid #4b4b4bb9;
+}
+.form-message {
+    outline-color: #0d6f92;
+    padding-top: 1.2em;
+    padding-left: 1.2em;
+    border-radius: 1em;
+}
+
+.form-label {
+    text-transform: capitalize;
+    color: #020202b7;
+    font-weight: 700;
+    margin-bottom: .5em;
+}
+
+.form-icon {
+    width: 100px;
+    align-self: center;
+}
+
+.footer {
+    padding: 2.5em;
+    background: #002939;
+    color: #FFF;
+    text-align: center;
 }

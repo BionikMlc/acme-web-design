@@ -3,81 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./assets/logo.svg" type="image/x-icon">
     <title>Acme Web Design</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header">
-        <div class="container flex">
-            <div class="logo">
-                <img src="assets/logo.svg" alt="logo" class="logo-img">
-                <h2 class="logo-text">acme web design</h2>
-            </div>
-            <nav>
-                <ul class="nav">
-                    <li class="nav-link">home</li>
-                    <li class="nav-link">services</li>
-                    <li class="nav-link">contact us</li>
-                </ul>
-            </nav>
+        <div class="logo">
+            <img src="assets/logo.svg" alt="logo" class="logo-img">
+            <p class="logo-txt">acme web design</p>
         </div>
+        <nav>
+            <ul class="nav">
+                <li class="nav-item"><a href="#" class="nav-link">services</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">about us</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">contact us</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">newsletter</a></li>
+            </ul>
+        </nav>
     </header>
-    <section class="hero">
-        <div class="container center-v">
-            <h1 class="hero-text">you are one step closer to build your online website and start your dream buisiness.</h1>
-            <button class="cta-btn">contact us &rarr;</button>
-        </div>
-    </section>
-    <section class="newsletter">
-        <div class="container flex">
-            <h2 class="newsletter-text">sign up with our newsletter</h2>
-            <div class="newsletter-input">
-                <input type="text" class="email-input" placeholder="your email">
-                <button class="cta-btn">sign up</button>
-            </div>
-        </div>
-    </section>
-    <section class="services">
-        <div class="container">
-            <h1 class="section-heading">services</h1>
-            <div class="row">
-                <p class="heading-text">we provide a veriaty of services that will help you start your  online business and make your ideas and dreams a reality using the latest web technologies.</p>
-                <img class="heading-img" src="./assets/tech.jpg" alt="">
-            </div>
-        </div>
-    </section>
-    <section class="about-us">
-        <div class="container">
-            <h1 class="section-heading">about us</h1>
-            <div class="row row-rev">
-                <p class="heading-text">we are a small team of passionite software developers that strives to make a change in the world by helping entrepreneurs invoate and achieve their goals.</p>
-                <img class="heading-img" src="./assets/team-Recovered.png" alt="">
-            </div>
-        </div>
-    </section>
-    <section class="contact-us">
-        <div class="container">
-            <h1 class="section-heading">contact us</h1>
-            <div class="row">
-                <p class="heading-text">dont hasitate to contact us.</p>
-                <div class="form-container">
-                    <form action="" class="contact-form" method="post">
-                        <img class="form-icon" src="./assets/mail.png" alt="">
-                        <label for="name" class="form-label">name</label>
-                        <input  type="text"  name="name" id="name" placeholder="your name">
-                        <label class="form-label" for="email">email</label>
-                        <input  type="text" name="email" id="email" placeholder="example123@example.com">
-                        <label class="form-label" for="email">message</label>
-                        <textarea class="form-message" name="message" id="message" cols="30" rows="10" placeholder="hello, world"></textarea>
-                        <button class="cta-btn">send message</button>
-                    </form>
-                </div>
-            </div>
-        </div>
+    <main>
+                <section class="hero">
+                    <div class="cta-box">
+                        <h1 class="hero-text">you are one step closer to build your online website and start your dream buisiness.</h1>
+                        <button class="cta-btn">contact us &rarr;</button>
+                    </div>
+                </section>
+                <section class="services">
+                        <h1 class="section-heading">services</h1>
+                        <div class="row">
+                            <p class="heading-text">we provide a veriaty of services that will help you start your  online business and make your ideas and dreams a reality using the latest web technologies.</p>
+                            <img class="heading-img" src="./assets/tech.jpg" alt="">
+                        </div>
+                    </div>
+                </section>
+                <section class="about-us">
+                        <h1 class="section-heading">about us</h1>
+                        <div class="row row-rev">
+                            <p class="heading-text">we are a small team of passionite software developers that strives to make a change in the world by helping entrepreneurs invoate and achieve their goals.</p>
+                            <img class="heading-img" src="./assets/team-Recovered.png" alt="">
+                        </div>
+                    </div>
+                </section>
+                <section class="newsletter">
+                        <h2 class="newsletter-text">sign up with our newsletter</h2>
+                        <div class="newsletter-input">
+                            <input type="text" class="email-input" placeholder="your email">
+                            <button class="cta-btn">sign up</button>
+                        </div>
+                </section>
 
-    </section>
+    </main>
     <footer class="footer">
         <p>Copyright &copy; 2020 Ahmad Jaber</p>
     </footer>

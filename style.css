@@ -136,7 +136,6 @@ body * + * {
 
     border-radius: .4em;
     padding: 1.2em;
-    /* margin-top: .5em; */
     font-weight: bold;
     cursor: pointer;
     border: none;
@@ -180,7 +179,7 @@ main {
 }
 
 .about-us {
-    padding: 10em 01.5em;
+    padding: 10em 1.5em;
     padding-top: .7em;
     background: #dbe2ea;
 
@@ -218,7 +217,70 @@ main {
     border-radius: 1em 0  0 1em;
     outline-color: #0d6f92;
     max-width: 400px;
+    width: 30%;
 }
+
+.form-icon {
+    width: 100px;
+}
+
+.email-input {
+    padding: 1.2em;
+    color: #1E8EB8;
+    background: #F3F3F3;
+    font-weight: 700;
+    border: none;
+    border-radius: 1em 0  0 1em;
+    outline-color: #0d6f92;
+}
+
+.contact-us {
+    padding: 10em 1.5em;
+    padding-top: .7em;
+    margin-top: 0;
+    background: #F3F3F3;
+    text-align: center;
+
+}
+
+.form-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+.contact-form input{
+    padding: 1.2em;
+    color: #1E8EB8;
+    outline-color: #0d6f92;
+    margin-bottom: 1em;
+    border-radius: 1em;
+    box-shadow: none;
+    border: 1px solid #4b4b4bb9;
+}
+.form-message {
+    outline-color: #0d6f92;
+    padding-top: 1.2em;
+    padding-left: 1.2em;
+    border-radius: 1em;
+}
+
+.form-label {
+    text-transform: capitalize;
+    color: #020202b7;
+    font-weight: 700;
+    margin-bottom: .5em;
+    text-align: left;
+}
+
+.form-icon {
+    width: 100px;
+    align-self: center;
+}
+
+
 
 .footer {
     margin-top: 0;
@@ -229,7 +291,7 @@ main {
 } 
 
 
-
+/* 478px */
 @media (min-width: 29.875em) {
     :root {
         font-size: 1.2rem;
@@ -239,7 +301,7 @@ main {
         max-width: 560px;
     }
 }
-
+/* 800px */
 @media (min-width: 50em) {
     .logo {
         flex-direction: row;
@@ -266,12 +328,10 @@ main {
         margin-left: 1.5em;
         display: block;
     }
-    /* .hero-text {
-        max-width: 560px;
-    } */
 }
 
-@media (min-width: 60em) {
+/* 960px */
+@media (min-width: 60em) { 
     .hero {
         justify-content: center;
     }
@@ -318,7 +378,7 @@ main {
     }
 
 }
-
+/* 1660px */
 @media (min-width: 103.75em) {
     :root {
         font-size: 2em;
